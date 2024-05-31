@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dfbde97a-7e16-44be-8c97-4e99f7944c65" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/api/conexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/conexion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/likes.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/likes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/perfil.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/perfil.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/likes.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/likes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/perfil.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/perfil.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/likes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfil.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="2h2Z2Mc8dvjsX0GieDLhNNgKLTK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dfbde97a-7e16-44be-8c97-4e99f7944c65" name="Default Changelist" comment="" />
+      <created>1716793925759</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716793925759</updated>
+      <workItem from="1716793927409" duration="1485000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

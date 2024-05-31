@@ -1,6 +1,9 @@
 const url = "http://localhost/matchfilmWeb/api/get_token.php";
 const token = localStorage.getItem('token');  // Asegúrate de que el token está correctamente almacenado en localStorage
 let like = document.getElementById('like');
+let color;
+let movie_id;
+let username;
 
 if (token) {
 fetch(url, {
@@ -10,7 +13,6 @@ fetch(url, {
     }
 })
 .then(response => {
-    console.log('Response status:', response.status);
     console.log('Response headers:', response.headers);
     if (!response.ok) {
         throw new Error(`Network response was not ok: ${response.statusText}`);
@@ -25,7 +27,8 @@ fetch(url, {
     });
 })
 .then(data => {
-    console.log('Respuesta:', data);
+    console.log(data);
+    username = data.data.username;
     buscar()
 })
 .catch(error => {
@@ -47,7 +50,6 @@ function buscar(){
         .then(response => {
             document.getElementById('nota').classList.remove();
             let numPeli = Math.floor(Math.random() * 20);
-            console.log(response.results[numPeli]);
             document.getElementById('linkImagen').src = 'https://image.tmdb.org/t/p/w500' + response.results[numPeli].poster_path
             document.getElementById('titulo').innerHTML = response.results[numPeli].title;
             document.getElementById('descripcion').innerHTML = response.results[numPeli].overview;
@@ -64,8 +66,43 @@ function buscar(){
 
 
 }
+like.addEventListener('click', function(){
+    let like={
+      'username' : username,
+      'movie_id' : movie_id,
+      'like': true
+  }
+  console.log(like);
+  let url='http://localhost/matchfilmWeb/api/post_like.php';
+  const options = {
+      method: 'POST',
+      headers:{
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(like),
+    };
+    fetch(url, options)
+      .then(res => {
+          if (res.status==201){
+              console.log(res);
+              return res.json();         
+          }
+          if(res.status==400){
+            document.getElementById('alert').innerHTML=  `
+            <div class="alert alert-danger alert-dismissible fade show text-center" role="alert">
+                <strong>Like Fallido</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>`
+            close;
+          }
+      })
+      .then(data => {
+        buscar()
+      })    
+      
+  });
 }else {
-    console.error('Token no encontrado en localStorage');
+    console.error('Token no encontrado');
 }
 function getColor(vote){
     if(vote >= 7.5) {
